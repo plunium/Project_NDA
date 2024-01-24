@@ -4,44 +4,66 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
     [SerializeField]
-    public float _speed = 5;
+    private float _forwardSpeed;
+    [SerializeField]
+    private float _lateralSpeed;
     [SerializeField]
     private float _jumpForce;
     [SerializeField]
-    public Rigidbody _rb;
+    private float _acceleration = 10;
+    [SerializeField]
+    private Rigidbody _rb;
 
-    float horizontalInput;
-    public float horizontalMultiplier = 2;
+    [SerializeField]
+    private Animator _playerAnimator;
 
 
     private int _numberOfColliderUnder = 0;
 
-    private void FixedUpdate()
+    void Update()
     {
+        float forwardDelta = _forwardSpeed * Time.deltaTime;
+        float lateralDelta = _lateralSpeed * Time.deltaTime;
 
-        Vector3 forwardMove = transform.forward * _speed * Time.deltaTime;
-        Vector3 horizontaleMove = transform.right * horizontalInput * _speed * Time.fixedDeltaTime * horizontalMultiplier;
-        _rb.MovePosition(_rb.position + forwardMove + horizontaleMove);
+        Vector3 CurrentSpeed = _rb.velocity;
 
-        if (Input.GetKeyDown(KeyCode.Space) /*&& _numberOfColliderUnder > 0*/)
+        Vector3 tempSpeed = CurrentSpeed;
+
+        //mouvement avant
+        tempSpeed = transform.forward * _forwardSpeed;
+
+        //On conserve la vitesse verticale
+        tempSpeed.y =_rb.velocity.y;    
+
+        // Mouvement horizontal
+        if (Input.GetKey(KeyCode.RightArrow))
+            tempSpeed += transform.right * _lateralSpeed;
+        if (Input.GetKey(KeyCode.LeftArrow))
+            tempSpeed += -transform.right * _lateralSpeed;
+       
+        _rb.velocity = Vector3.Lerp(_rb.velocity,tempSpeed, _acceleration * Time.deltaTime) ;
+
+        //Mouvement de saut
+        if (Input.GetKeyDown(KeyCode.Space) && _numberOfColliderUnder > 0)
         {
             _rb.AddForce(new Vector3(0, _jumpForce, 0));
+            _playerAnimator.SetTrigger("Jump");
+        }
+        
+        //Mouvement de slide
+        // en QWERTY Z = W
+        if (Input.GetKeyDown(KeyCode.Z) && _numberOfColliderUnder > 0)
+        {
+            _playerAnimator.SetTrigger("Slide");
         }
 
-
+        //Gravité
         if (_rb.velocity.y < -1)
-            _rb.AddForce(Physics.gravity * Time.deltaTime * 2);
-
+            _rb.AddForce(Physics.gravity * Time.deltaTime * 100);
+            
     }
-
-
-    private void Update()
-    {
-        horizontalInput = Input.GetAxis("Horizontal");
-        
-    }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -50,8 +72,6 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         _numberOfColliderUnder--;
-
     }
-
 
 }
