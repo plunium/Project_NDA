@@ -19,11 +19,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Animator _playerAnimator;
 
-
+    private float _timer = 0;
     private int _numberOfColliderUnder = 0;
 
     void Update()
     {
+        _timer += Time.deltaTime;
+
         float forwardDelta = _forwardSpeed * Time.deltaTime;
         float lateralDelta = _lateralSpeed * Time.deltaTime;
 
@@ -46,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.velocity = Vector3.Lerp(_rb.velocity,tempSpeed, _acceleration * Time.deltaTime) ;
 
         //Mouvement de saut
-        if (Input.GetKeyDown(KeyCode.Space) && _numberOfColliderUnder > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && _numberOfColliderUnder > 0 && _timer > 1.0f)
         {
             _rb.AddForce(new Vector3(0, _jumpForce, 0));
             _playerAnimator.SetTrigger("Jump");
@@ -54,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
         
         //Mouvement de slide
         // en QWERTY Z = W
-        if (Input.GetKeyDown(KeyCode.Z) && _numberOfColliderUnder > 0)
+        if (Input.GetKeyDown(KeyCode.Z) && _numberOfColliderUnder > 0 && _timer > 1.0f)
         {
             _playerAnimator.SetTrigger("Slide");
         }
