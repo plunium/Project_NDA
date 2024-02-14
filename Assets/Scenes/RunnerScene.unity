@@ -136,6 +136,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.966
@@ -608,6 +612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier Metal (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1575539274977262, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4985762752809740, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.1640005
@@ -670,6 +678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -721,6 +733,11 @@ PrefabInstance:
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 2b3cabd4b48b10844aaf7f6b97260292,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -817,6 +834,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_Name
       value: RoadBlock_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1314,6 +1335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3
@@ -1727,7 +1752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 502202365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1c66ddf510ab454bb19a0ebb21e6670, type: 3}
+  m_Script: {fileID: 11500000, guid: b2afa547089ece84a81dceba71eb75ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &523464321
@@ -1878,9 +1903,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1071491981225826, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 1646981259178978, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
       propertyPath: m_Name
       value: Car_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2294,6 +2327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3
@@ -2366,6 +2403,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: 388d83314c9e51c40956fb6908979eee, type: 3}
       propertyPath: m_Name
       value: Car_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 388d83314c9e51c40956fb6908979eee, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 388d83314c9e51c40956fb6908979eee, type: 3}
       propertyPath: m_LocalScale.x
@@ -3355,6 +3396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp Orange
       objectReference: {fileID: 0}
+    - target: {fileID: 1986491277170356, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -3406,6 +3451,11 @@ PrefabInstance:
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54816613978059240, guid: 0a78b1d18f00ef74c80bc18094d09c48,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3486,6 +3536,10 @@ PrefabInstance:
     - target: {fileID: 1959030373088092, guid: 6717c7c2d677a9f439f502029ec5b22a, type: 3}
       propertyPath: m_Name
       value: Bus_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959030373088092, guid: 6717c7c2d677a9f439f502029ec5b22a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4353972167979376, guid: 6717c7c2d677a9f439f502029ec5b22a, type: 3}
       propertyPath: m_LocalScale.x
@@ -3690,6 +3744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_4
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.26
@@ -3830,6 +3888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3
@@ -3902,6 +3964,10 @@ PrefabInstance:
     - target: {fileID: 1418213265044498, guid: a1307b4a91e909948b68d1c68fb89817, type: 3}
       propertyPath: m_Name
       value: Parking Gate (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418213265044498, guid: a1307b4a91e909948b68d1c68fb89817, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4298722674281598, guid: a1307b4a91e909948b68d1c68fb89817, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4091,6 +4157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cone (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -4142,6 +4212,11 @@ PrefabInstance:
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 2b3cabd4b48b10844aaf7f6b97260292,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4242,6 +4317,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: 6f993fa0f8fc9f045888054c717741b4, type: 3}
       propertyPath: m_Name
       value: Taxi
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 6f993fa0f8fc9f045888054c717741b4, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 6f993fa0f8fc9f045888054c717741b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -4372,6 +4451,10 @@ PrefabInstance:
     - target: {fileID: 1959030373088092, guid: d3a9898e22901924b98de4fff69bf9e6, type: 3}
       propertyPath: m_Name
       value: Bus_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959030373088092, guid: d3a9898e22901924b98de4fff69bf9e6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4353972167979376, guid: d3a9898e22901924b98de4fff69bf9e6, type: 3}
       propertyPath: m_LocalScale.x
@@ -4638,7 +4721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575539274977262, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
       propertyPath: m_TagString
-      value: Obsctacle
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4985762752809740, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4701,6 +4784,10 @@ PrefabInstance:
     - target: {fileID: 1959030373088092, guid: d3a9898e22901924b98de4fff69bf9e6, type: 3}
       propertyPath: m_Name
       value: Bus_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1959030373088092, guid: d3a9898e22901924b98de4fff69bf9e6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4353972167979376, guid: d3a9898e22901924b98de4fff69bf9e6, type: 3}
       propertyPath: m_LocalScale.x
@@ -6553,6 +6640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_A
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.71
@@ -6830,6 +6921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier Metal (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1575539274977262, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4985762752809740, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.1040004
@@ -6965,6 +7060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -7016,6 +7115,11 @@ PrefabInstance:
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 2b3cabd4b48b10844aaf7f6b97260292,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7148,6 +7252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -7200,6 +7308,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 7ed407e0aeced17448a2a8beade4d639,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7216,6 +7329,10 @@ PrefabInstance:
     - target: {fileID: 1300399225187642, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_Name
       value: Road Cone (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
       objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalScale.x
@@ -7268,6 +7385,11 @@ PrefabInstance:
     - target: {fileID: 4845857454134060, guid: 2b3cabd4b48b10844aaf7f6b97260292, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 2b3cabd4b48b10844aaf7f6b97260292,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7368,6 +7490,10 @@ PrefabInstance:
     - target: {fileID: 100008, guid: 0fb14757fdd73de4fbaa71f0ec376ef3, type: 3}
       propertyPath: m_Name
       value: Parking Gate (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 0fb14757fdd73de4fbaa71f0ec376ef3, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 0fb14757fdd73de4fbaa71f0ec376ef3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7654,6 +7780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier Metal
       objectReference: {fileID: 0}
+    - target: {fileID: 1575539274977262, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4985762752809740, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.22
@@ -7716,6 +7846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp Orange (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1986491277170356, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -7768,6 +7902,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54816613978059240, guid: 0a78b1d18f00ef74c80bc18094d09c48,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7784,6 +7923,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
       propertyPath: m_Name
       value: Car_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 1eb894c97da32c940a90228cac9bea1c, type: 3}
       propertyPath: m_LocalScale.x
@@ -7857,6 +8000,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_Name
       value: RoadBlock_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7998,6 +8145,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cone (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -8049,6 +8200,11 @@ PrefabInstance:
     - target: {fileID: 4845857454134060, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 7ed407e0aeced17448a2a8beade4d639,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8233,6 +8389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parking Gate (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1418213265044498, guid: a1307b4a91e909948b68d1c68fb89817, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4821558035027758, guid: a1307b4a91e909948b68d1c68fb89817, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.73
@@ -8346,6 +8506,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_Name
       value: RoadBlock_D
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_LocalScale.y
@@ -8621,6 +8785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence
       objectReference: {fileID: 0}
+    - target: {fileID: 1911239484128126, guid: 6e39b733a9d84744f8ce0a261bea773d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4174875708765392, guid: 6e39b733a9d84744f8ce0a261bea773d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.83
@@ -8661,6 +8829,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54278182865277444, guid: 6e39b733a9d84744f8ce0a261bea773d,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8677,6 +8850,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: 388d83314c9e51c40956fb6908979eee, type: 3}
       propertyPath: m_Name
       value: Car_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 388d83314c9e51c40956fb6908979eee, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 388d83314c9e51c40956fb6908979eee, type: 3}
       propertyPath: m_LocalScale.x
@@ -8751,6 +8928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road Cone
       objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -8803,6 +8984,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 7ed407e0aeced17448a2a8beade4d639,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8846,6 +9032,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_Name
       value: RoadBlock_D (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 914351682f086b145ae6774edb5da09b, type: 3}
       propertyPath: m_LocalScale.y
@@ -8908,6 +9098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadBlock_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86f783457a9659e41a99dc3147fefdba, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.475
@@ -8965,6 +9159,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp Orange (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1986491277170356, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -9016,6 +9214,11 @@ PrefabInstance:
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54816613978059240, guid: 0a78b1d18f00ef74c80bc18094d09c48,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9117,6 +9320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrier Metal (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1575539274977262, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4985762752809740, guid: fe337cb383a88824e84eb3aa64df90aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.1109996
@@ -9179,6 +9386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp Orange (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1986491277170356, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -9231,6 +9442,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54816613978059240, guid: 0a78b1d18f00ef74c80bc18094d09c48,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9247,6 +9463,10 @@ PrefabInstance:
     - target: {fileID: 1300399225187642, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
       propertyPath: m_Name
       value: Road Cone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300399225187642, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
+      propertyPath: m_TagString
+      value: Obsctacle
       objectReference: {fileID: 0}
     - target: {fileID: 4845857454134060, guid: 7ed407e0aeced17448a2a8beade4d639, type: 3}
       propertyPath: m_LocalScale.x
@@ -9300,6 +9520,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 54930060661347324, guid: 7ed407e0aeced17448a2a8beade4d639,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9316,6 +9541,10 @@ PrefabInstance:
     - target: {fileID: 1986491277170356, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_Name
       value: Lamp Orange (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1986491277170356, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalScale.x
@@ -9368,6 +9597,11 @@ PrefabInstance:
     - target: {fileID: 4640310531163830, guid: 0a78b1d18f00ef74c80bc18094d09c48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54816613978059240, guid: 0a78b1d18f00ef74c80bc18094d09c48,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 126
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9636,6 +9870,10 @@ PrefabInstance:
     - target: {fileID: 1646981259178978, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
       propertyPath: m_Name
       value: Car_4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646981259178978, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4870167790249810, guid: 558e73634b44f39458a7ea4a8a56976a, type: 3}
       propertyPath: m_LocalPosition.x
