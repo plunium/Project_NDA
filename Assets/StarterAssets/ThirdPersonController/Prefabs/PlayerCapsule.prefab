@@ -26,12 +26,22 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29811323}
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.9, z: 0}
   m_LocalScale: {x: 0.75, y: 0.9, z: 0.75}
   m_Children: []
   m_Father: {fileID: 1293029876712600392}
   m_RootOrder: 1
+=======
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.9, z: 0.75}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1293029876712600392}
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &29811327
 MeshFilter:
@@ -52,6 +62,10 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
+=======
+  m_StaticShadowCaster: 0
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -90,8 +104,22 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29811323}
   m_Material: {fileID: 0}
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_IsTrigger: 0
   m_Enabled: 1
+=======
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -124,14 +152,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925873226565265906}
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_Children:
   - {fileID: 6074239116653777070}
   - {fileID: 29811324}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_RootOrder: 0
+=======
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &1925873226565265912
 CharacterController:
@@ -141,9 +180,23 @@ CharacterController:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925873226565265906}
   m_Material: {fileID: 0}
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+=======
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_Height: 1.8
   m_Radius: 0.4
   m_SlopeLimit: 45
@@ -167,6 +220,12 @@ MonoBehaviour:
   SprintSpeed: 6
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
+=======
+  LandingAudioClip: {fileID: 0}
+  FootstepAudioClips: []
+  FootstepAudioVolume: 0.5
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   JumpHeight: 1.2
   Gravity: -15
   JumpTimeout: 0.5
@@ -176,7 +235,11 @@ MonoBehaviour:
   GroundedRadius: 0.28
   GroundLayers:
     serializedVersion: 2
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
     m_Bits: 513
+=======
+    m_Bits: 1
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   CinemachineCameraTarget: {fileID: 6074239116653777065}
   TopClamp: 70
   BottomClamp: -30
@@ -340,10 +403,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6074239116653777065}
+<<<<<<< Updated upstream:Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.375, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1293029876712600392}
   m_RootOrder: 0
+=======
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1293029876712600392}
+>>>>>>> Stashed changes:Project NDA/Assets/StarterAssets/ThirdPersonController/Prefabs/PlayerCapsule.prefab
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
