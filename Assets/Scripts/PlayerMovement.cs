@@ -19,11 +19,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Animator _playerAnimator;
 
-    private float _timer = 0;
+    private float _timer = 2.0f;
     private int _numberOfColliderUnder = 0;
+    private bool _isDead = false;
 
     void Update()
     {
+        if (_isDead)
+        {
+            _rb.velocity = Vector3.zero;
+            return;
+        }
+
         _timer += Time.deltaTime;
 
         float forwardDelta = _forwardSpeed * Time.deltaTime;
@@ -52,13 +59,19 @@ public class PlayerMovement : MonoBehaviour
         {
             _rb.AddForce(new Vector3(0, _jumpForce, 0));
             _playerAnimator.SetTrigger("Jump");
+            _timer = 0.0f;
         }
 
         //Mouvement de slide
         // en QWERTY Z = W
-        if (Input.GetKeyDown(KeyCode.Z) && _numberOfColliderUnder > 0 && _timer > 1.0f)
+        if ((Input.GetKeyDown(KeyCode.Z)
+            || Input.GetKeyDown(KeyCode.W)
+            || Input.GetKeyDown(KeyCode.LeftShift))
+            && _numberOfColliderUnder > 0
+            && _timer > 1.0f)
         {
             _playerAnimator.SetTrigger("Slide");
+            _timer = 0.0f;
         }
 
         //Gravité
@@ -74,6 +87,15 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         _numberOfColliderUnder--;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            _isDead = true;
+            _playerAnimator.SetTrigger("Death");
+        }
     }
 
 }
