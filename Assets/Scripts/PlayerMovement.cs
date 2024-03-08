@@ -40,10 +40,10 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 tempSpeed = CurrentSpeed;
 
-        //mouvement avant
+        // mouvement avant
         tempSpeed = transform.forward * _forwardSpeed;
 
-        //On conserve la vitesse verticale
+        // On conserve la vitesse verticale
         tempSpeed.y = _rb.velocity.y;
 
         // Mouvement horizontal
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         _rb.velocity = Vector3.Lerp(_rb.velocity, tempSpeed, _acceleration * Time.deltaTime);
 
-        //Mouvement de saut
+        // Mouvement de saut
         if (Input.GetKeyDown(KeyCode.Space) && _numberOfColliderUnder > 0 && _timer > 1.0f)
         {
             _rb.AddForce(new Vector3(0, _jumpForce, 0));
@@ -62,8 +62,8 @@ public class PlayerMovement : MonoBehaviour
             _timer = 0.0f;
         }
 
-        //Mouvement de slide
-        // en QWERTY Z = W
+        // Mouvement de slide
+        // (en QWERTY Z = W)
         if ((Input.GetKeyDown(KeyCode.Z)
             || Input.GetKeyDown(KeyCode.W)
             || Input.GetKeyDown(KeyCode.LeftShift))
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
             _timer = 0.0f;
         }
 
-        //Gravité
+        // Gravité
         if (_rb.velocity.y < -1)
             _rb.AddForce(Physics.gravity * Time.deltaTime * 100);
 
